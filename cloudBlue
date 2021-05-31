@@ -1,3 +1,22 @@
+/*Floating Animation*/
+@keyframes floating {
+0% { transform: translate(0, 0px); }
+50% { transform: translate(0, 20px); }
+100% { transform: translate(0, -0px); }
+}
+
+@-webkit-keyframes reveal { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes reveal { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes reveal { from { opacity:0; } to { opacity:1; } }
+@keyframes reveal { from { opacity:0; } to { opacity:1; } }
+
+.blurbs, .box, .box.comments {
+animation-name: floating;
+animation-duration: 9s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
 * {cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur8.ani), url(https://cur.cursors-4u.net/cursors/cur-1/cur8.png), auto !important;}
 
 /*Header*/
